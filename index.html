@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portofolio Digital Web Developer - Membangun Aplikasi Web Fungsional, Sistem Backend, REST API, dan Integrasi Basis Data.">
+  <title>Portofolio | Web Developer</title>
+  
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ================= NAVBAR ================= -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="#home" class="nav-logo">
+        &lt;dev/&gt; <span>Nylptr</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle Navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#home" class="nav-link active">Beranda</a>
+        <a href="#about" class="nav-link">Tentang</a>
+        <a href="#skills" class="nav-link">Keahlian</a>
+        <a href="#projects" class="nav-link">Proyek</a>
+        <a href="#experience" class="nav-link">Pengalaman</a>
+        <a href="#education" class="nav-link">Pendidikan</a>
+        <a href="#contact" class="nav-link">Kontak</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ================= HERO SECTION ================= -->
+  <section id="home" class="hero">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="status-dot"></span>
+          <span>Web Developer Portfolio</span>
+        </div>
+        <h1 class="hero-title">
+          Halo! Saya<span class="highlight"> Nayla</span>
+        </h1>
+        <p class="hero-description">
+          Lulusan D3 Teknik Informatika yang berfokus pada pengembangan aplikasi web. Terbiasa membangun alur data backend menggunakan PHP & Python, merancang antarmuka dengan HTML & CSS, serta mengintegrasikan database MySQL dan REST API.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">Lihat Proyek Pilihan</a>
+          <a href="#contact" class="btn btn-secondary">Hubungi Saya</a>
+        </div>
+        <div class="hero-meta">
+          <div class="meta-item">
+            <span class="meta-value">D3</span>
+            <span class="meta-label">Teknik Informatika</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-value">Web Dev</span>
+            <span class="meta-label">Fokus Bidang</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-value">Backend & Frontend</span>
+            <span class="meta-label">Lingkup Kerja</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Code Snippet Card Visual -->
+      <div class="hero-visual">
+        <div class="code-preview-card">
+          <div class="code-header">
+            <span class="code-circle circle-red"></span>
+            <span class="code-circle circle-yellow"></span>
+            <span class="code-circle circle-green"></span>
+            <span class="code-filename">DeveloperProfile.php</span>
+          </div>
+          <div class="code-body">
+            <p><span class="code-keyword">&lt;?php</span></p>
+            <p><span class="code-keyword">class</span> <span class="code-func">WebDeveloper</span> {</p>
+            <p>&nbsp;&nbsp;<span class="code-keyword">public</span> <span class="code-var">$targetRole</span> = <span class="code-string">'Web Developer'</span>;</p>
+            <p>&nbsp;&nbsp;<span class="code-keyword">public</span> <span class="code-var">$backend</span> = [<span class="code-string">'PHP'</span>, <span class="code-string">'Python'</span>];</p>
+            <p>&nbsp;&nbsp;<span class="code-keyword">public</span> <span class="code-var">$database</span> = <span class="code-string">'MySQL'</span>;</p>
+            <p>&nbsp;&nbsp;<span class="code-keyword">public</span> <span class="code-var">$frontend</span> = [<span class="code-string">'HTML'</span>, <span class="code-string">'CSS'</span>];</p>
+            <p>&nbsp;&nbsp;<span class="code-keyword">public</span> <span class="code-var">$api</span> = <span class="code-string">'REST API'</span>;</p>
+            <br>
+            <p>&nbsp;&nbsp;<span class="code-comment">// Menghubungkan antarmuka dengan sistem data</span></p>
+            <p>&nbsp;&nbsp;<span class="code-keyword">public function</span> <span class="code-func">buildSolution</span>() {</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-keyword">return</span> <span class="code-string">'Reliable and structured web systems.'</span>;</p>
+            <p>&nbsp;&nbsp;}</p>
+            <p>}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= ABOUT SECTION ================= -->
+  <section id="about" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Tentang Saya</span>
+        <h2 class="section-title">Latar Belakang & Pendekatan Kerja</h2>
+        <p class="section-subtitle">Membangun fondasi web yang rapi melalui pemahaman alur data dan antarmuka</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            Saya merupakan lulusan D3 Teknik Informatika dengan fokus utama pada Web Development. Ketertarikan saya terbagi secara seimbang antara perancangan antarmuka frontend yang fungsional dan pembangunan arsitektur backend yang mengelola alur data aplikasi.
+          </p>
+          <p>
+            Dalam berbagai proyek akademik maupun aplikasi mandiri, saya terbiasa menggunakan PHP dan Python untuk menangani logika server serta REST API, didukung oleh MySQL untuk pengelolaan basis data. Sebelum menulis kode antarmuka menggunakan HTML dan CSS, saya kerap merancang alur tampilan di Figma. Saya senang menyelesaikan masalah yang berkaitan dengan efisiensi pengelolaan data, validasi input pengguna, dan memastikan komunikasi data antara frontend dan backend berjalan stabil.
+          </p>
+        </div>
+
+        <div class="about-features">
+          <div class="about-feature-card">
+            <div class="feature-icon-box">&lt;/&gt;</div>
+            <div class="feature-info">
+              <h4>Implementasi Logika Backend & API</h4>
+              <p>Membangun endpoint REST API dan sistem server menggunakan PHP dan Python untuk memproses serta menyediakan data aplikasi secara aman.</p>
+            </div>
+          </div>
+
+          <div class="about-feature-card">
+            <div class="feature-icon-box">🗄️</div>
+            <div class="feature-info">
+              <h4>Pengelolaan Basis Data Relasional</h4>
+              <p>Menyusun skema database MySQL yang terstruktur guna mendukung kebutuhan transaksi dan inventarisasi data.</p>
+            </div>
+          </div>
+
+          <div class="about-feature-card">
+            <div class="feature-icon-box">🎨</div>
+            <div class="feature-info">
+              <h4>Perancangan Desain ke Kode</h4>
+              <p>Menerjemahkan ide dan alur antarmuka dari Figma menjadi halaman web menggunakan HTML dan CSS yang mudah dipahami pengguna.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SKILLS SECTION ================= -->
+  <section id="skills" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Keahlian Teknis</span>
+        <h2 class="section-title">Teknologi yang Saya Gunakan</h2>
+        <p class="section-subtitle">Pengelompokan alat dan bahasa pemrograman yang digunakan dalam pengembangan proyek</p>
+      </div>
+
+      <div class="skills-grid">
+        <!-- Backend -->
+        <div class="skill-category-card">
+          <div class="category-header">
+            <div class="category-icon">⚙️</div>
+            <h3 class="category-title">Backend</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">PHP</span>
+            <span class="skill-tag">Python</span>
+          </div>
+        </div>
+
+        <!-- Frontend -->
+        <div class="skill-category-card">
+          <div class="category-header">
+            <div class="category-icon">💻</div>
+            <h3 class="category-title">Frontend</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">HTML</span>
+            <span class="skill-tag">CSS</span>
+          </div>
+        </div>
+
+        <!-- Database -->
+        <div class="skill-category-card">
+          <div class="category-header">
+            <div class="category-icon">🗄️</div>
+            <h3 class="category-title">Database</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">MySQL</span>
+          </div>
+        </div>
+
+        <!-- API -->
+        <div class="skill-category-card">
+          <div class="category-header">
+            <div class="category-icon">🔄</div>
+            <h3 class="category-title">API</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">REST API</span>
+          </div>
+        </div>
+
+        <!-- Tools & DevOps -->
+        <div class="skill-category-card">
+          <div class="category-header">
+            <div class="category-icon">🛠️</div>
+            <h3 class="category-title">Tools & Desain</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">Figma</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PROJECTS SECTION ================= -->
+  <section id="projects" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Proyek Portofolio</span>
+        <h2 class="section-title">Studi Kasus & Implementasi Proyek</h2>
+        <p class="section-subtitle">Berikut adalah proyek aplikasi web yang pernah saya rancang dan kembangkan</p>
+      </div>
+
+      <div class="projects-list">
+
+        <!-- PROYEK 1: Sistem Informasi Harga Pangan (Prioritas 1) -->
+        <article class="project-card featured">
+          <div class="project-inner">
+            <div class="project-meta-row">
+              <span class="project-category-badge">REST API & Full-Stack</span>
+              <span class="project-priority-badge">Prioritas Utama #1</span>
+            </div>
+
+            <h3 class="project-title">Sistem Informasi Harga Pangan</h3>
+            <p class="project-overview">
+              Aplikasi web untuk mendata dan memantau informasi harga komoditas pangan beserta pengelolaan stok dan kategorinya. Dibangun dengan memisahkan arsitektur penyedia data dan antarmuka admin yang terlindungi autentikasi.
+            </p>
+
+            <div class="project-grid-details">
+              <div class="detail-block">
+                <h5>Problem</h5>
+                <p>Kebutuhan sistem terpusat untuk mencatat fluktuasi harga bahan pangan, pengelompokan kategori komoditas, dan pemantauan stok secara akurat oleh pengelola data.</p>
+              </div>
+              <div class="detail-block">
+                <h5>Solution</h5>
+                <p>Membangun sistem web dengan arsitektur REST API, dilengkapi modul autentikasi admin dan panel pengelolaan inventaris pangan.</p>
+              </div>
+              <div class="detail-block">
+                <h5>My Role</h5>
+                <p>Backend Developer, Database Designer, dan UI Designer (merancang mock-up antarmuka di Figma).</p>
+              </div>
+              <div class="detail-block">
+                <h5>Development Process</h5>
+                <p>Merancang UI di Figma &rarr; Menyusun skema tabel MySQL &rarr; Mengimplementasikan logika backend dan endpoint REST API &rarr; Pengujian alur autentikasi admin.</p>
+              </div>
+            </div>
+
+            <div class="project-features-list">
+              <h5>Fitur-Fitur Utama:</h5>
+              <ul>
+                <li>Autentikasi dan login admin yang aman</li>
+                <li>Manajemen komoditas pangan (tambah, ubah, hapus)</li>
+                <li>Pengelompokan kategori bahan pangan</li>
+                <li>Pencatatan dan pemantauan stok barang</li>
+                <li>Penyediaan data melalui endpoint REST API</li>
+              </ul>
+            </div>
+
+            <div class="project-footer">
+              <div class="tech-stack-pills">
+                <span class="tech-pill">REST API</span>
+                <span class="tech-pill">MySQL</span>
+                <span class="tech-pill">Figma</span>
+                <span class="tech-pill">[PHP / Python]</span>
+              </div>
+              <div class="project-links">
+                <a href="#contact" class="btn-outline-sm">GitHub: [Belum diisi]</a>
+                <a href="#contact" class="btn-outline-sm">Demo: [Belum diisi]</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROYEK 2: E-Commerce (Prioritas 2) -->
+        <article class="project-card">
+          <div class="project-inner">
+            <div class="project-meta-row">
+              <span class="project-category-badge">Web Application</span>
+              <span class="project-priority-badge">Prioritas #2</span>
+            </div>
+
+            <h3 class="project-title">Platform E-Commerce dengan Dashboard Terpisah</h3>
+            <p class="project-overview">
+              Aplikasi belanja daring berbasis web yang membedakan alur transaksi bagi pembeli dan tata kelola stok serta katalog untuk administrator toko.
+            </p>
+
+            <div class="project-grid-details">
+              <div class="detail-block">
+                <h5>Problem</h5>
+                <p>Perlunya antarmuka belanja yang ringkas untuk pembeli serta dashboard terpisah bagi admin dalam mengelola katalog dan pembaruan harga barang.</p>
+              </div>
+              <div class="detail-block">
+                <h5>Solution</h5>
+                <p>Membangun antarmuka dashboard ganda (pembeli & admin) dan mengintegrasikan alur data barang pada backend.</p>
+              </div>
+              <div class="detail-block">
+                <h5>My Role</h5>
+                <p>Frontend Developer (dashboard pembeli & admin) dan Backend Developer.</p>
+              </div>
+              <div class="detail-block">
+                <h5>Development Process</h5>
+                <p>Membuat struktur tampilan dashboard dengan HTML & CSS &rarr; Mengembangkan logika backend pemrosesan data &rarr; Menghubungkan daftar produk dan harga barang.</p>
+              </div>
+            </div>
+
+            <div class="project-features-list">
+              <h5>Fitur-Fitur Utama:</h5>
+              <ul>
+                <li>Katalog produk dan tampilan harga barang</li>
+                <li>Dashboard interaktif bagi pembeli</li>
+                <li>Dashboard admin untuk tata kelola produk</li>
+                <li>Pengelolaan data produk di sisi backend</li>
+              </ul>
+            </div>
+
+            <div class="project-footer">
+              <div class="tech-stack-pills">
+                <span class="tech-pill">HTML</span>
+                <span class="tech-pill">CSS</span>
+                <span class="tech-pill">[PHP / Python]</span>
+                <span class="tech-pill">[MySQL]</span>
+              </div>
+              <div class="project-links">
+                <a href="#contact" class="btn-outline-sm">GitHub: [Belum diisi]</a>
+                <a href="#contact" class="btn-outline-sm">Demo: [Belum diisi]</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROYEK 3: Turnamen E-Sport (Prioritas 3) -->
+        <article class="project-card">
+          <div class="project-inner">
+            <div class="project-meta-row">
+              <span class="project-category-badge">Web System & API</span>
+              <span class="project-priority-badge">Prioritas #3</span>
+            </div>
+
+            <h3 class="project-title">Sistem Turnamen E-Sport</h3>
+            <p class="project-overview">
+              Sistem informasi kompetisi e-sport yang memproses alur registrasi peserta serta menyediakan distribusi data turnamen menggunakan PHP dan komunikasi data API.
+            </p>
+
+            <div class="project-grid-details">
+              <div class="detail-block">
+                <h5>Problem</h5>
+                <p>Pencatatan data pendaftar turnamen e-sport secara manual rentan menimbulkan kendala validasi data dan keterlambatan distribusi jadwal kompetisi.</p>
+              </div>
+              <div class="detail-block">
+                <h5>Solution</h5>
+                <p>Mengembangkan backend untuk menerima, menyimpan, dan menyediakan data kompetisi secara terorganisir melalui API.</p>
+              </div>
+              <div class="detail-block">
+                <h5>My Role</h5>
+                <p>Backend Developer & Frontend Implementer.</p>
+              </div>
+              <div class="detail-block">
+                <h5>Development Process</h5>
+                <p>Menyusun tata letak antarmuka dengan HTML dan CSS &rarr; Membangun fungsi penerimaan dan penyimpanan data di PHP &rarr; Menyediakan data melalui format API.</p>
+              </div>
+            </div>
+
+            <div class="project-features-list">
+              <h5>Fitur-Fitur Utama:</h5>
+              <ul>
+                <li>Formulir dan alur pendaftaran peserta turnamen</li>
+                <li>Penyimpanan dan validasi data kompetisi</li>
+                <li>Endpoint API untuk menyediakan informasi jadwal & peserta</li>
+                <li>Antarmuka web menggunakan HTML dan CSS</li>
+              </ul>
+            </div>
+
+            <div class="project-footer">
+              <div class="tech-stack-pills">
+                <span class="tech-pill">PHP</span>
+                <span class="tech-pill">HTML</span>
+                <span class="tech-pill">CSS</span>
+                <span class="tech-pill">REST API</span>
+              </div>
+              <div class="project-links">
+                <a href="#contact" class="btn-outline-sm">GitHub: [Belum diisi]</a>
+                <a href="#contact" class="btn-outline-sm">Demo: [Belum diisi]</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= EXPERIENCE & EDUCATION SECTION ================= -->
+  <section id="experience" class="section">
+    <div class="container">
+      <div class="dual-timeline-grid">
+
+        <!-- Experience Column -->
+        <div class="timeline-column">
+          <h3>Pengalaman Proyek</h3>
+
+          <div class="timeline-card">
+            <span class="timeline-badge">[Tahun / Belum diisi]</span>
+            <h4 class="timeline-title">Pengembangan Sistem & Aplikasi Web</h4>
+            <p class="timeline-org">Proyek Akademik & Mandiri</p>
+            <div class="timeline-description">
+              <ul>
+                <li>Mengembangkan beberapa aplikasi sistem backend dan frontend untuk kebutuhan akademik dan implementasi studi kasus.</li>
+                <li>Menerapkan arsitektur REST API untuk menerima, menyimpan, dan mengalirkan data antara database dan tampilan.</li>
+                <li>Menggunakan Git untuk pelacakan kode sumber dan version control dalam alur kerja pengembangan.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Education Column -->
+        <div class="timeline-column" id="education">
+          <h3>Pendidikan</h3>
+
+          <div class="timeline-card">
+            <span class="timeline-badge">[Tahun Kelulusan / Belum diisi]</span>
+            <h4 class="timeline-title">D3 Teknik Informatika</h4>
+            <p class="timeline-org">[Nama Kampus / Politeknik / Belum diisi]</p>
+            <div class="timeline-description">
+              <p>
+                Menempuh pendidikan vokasi di bidang Teknik Informatika dengan pemahaman dasar pada:
+              </p>
+              <ul>
+                <li>Pemrograman Berorientasi Objek & Dasar Pengembangan Web</li>
+                <li>Perancangan Basis Data Relasional (MySQL)</li>
+                <li>Rekayasa Perangkat Lunak & Logika Algoritma</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CONTACT SECTION ================= -->
+  <section id="contact" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Kontak</span>
+        <h2 class="section-title">Mari Terhubung</h2>
+        <p class="section-subtitle">Terbuka untuk peluang kerja dan diskusi posisi Web Developer</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info-panel">
+          <h3>Siap Berkontribusi</h3>
+          <p>
+            Saya siap membawa keterampilan pengembangan web, integrasi REST API, dan basis data ke dalam tim Anda. Anda dapat menghubungi saya melalui saluran kontak berikut:
+          </p>
+
+          <div class="contact-links-list">
+            <a href="mailto:emailanda@domain.com" class="contact-link-item">
+              <div class="contact-link-icon">✉️</div>
+              <div class="contact-link-details">
+                <span class="contact-link-label">Email</span>
+                <span class="contact-link-value">[emailanda@domain.com / Belum diisi]</span>
+              </div>
+            </a>
+
+            <div class="contact-link-item">
+              <div class="contact-link-icon">📍</div>
+              <div class="contact-link-details">
+                <span class="contact-link-label">Lokasi</span>
+                <span class="contact-link-value">[Kota, Indonesia / Belum diisi]</span>
+              </div>
+            </div>
+
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="contact-link-item">
+              <div class="contact-link-icon">🐙</div>
+              <div class="contact-link-details">
+                <span class="contact-link-label">GitHub</span>
+                <span class="contact-link-value">github.com/naylazzhr</span>
+              </div>
+            </a>
+
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="contact-link-item">
+              <div class="contact-link-icon">💼</div>
+              <div class="contact-link-details">
+                <span class="contact-link-label">LinkedIn</span>
+                <span class="contact-link-value">[linkedin.com/in/username / Belum diisi]</span>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form-card">
+          <form id="contactForm">
+            <div class="form-group">
+              <label for="senderName" class="form-label">Nayla Putri Az'zahro</label>
+              <input type="text" id="senderName" class="form-input" placeholder="Masukkan nama Anda" required>
+            </div>
+
+            <div class="form-group">
+              <label for="senderEmail" class="form-label">putriazzahro76@gmail.com</label>
+              <input type="email" id="senderEmail" class="form-input" placeholder="nama@email.com" required>
+            </div>
+
+            <div class="form-group">
+              <label for="senderMessage" class="form-label">Pesan</label>
+              <textarea id="senderMessage" class="form-textarea" placeholder="Tuliskan pesan atau tawaran peluang kerja..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%;">Kirim Pesan</button>
+            <p class="form-notice">*Formulir ini akan membantu Anda mengirimkan pesan langsung ke aplikasi email.</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-logo">
+        &lt;dev/&gt; <span>Nylptr</span>
+      </div>
+      <p class="footer-copy">
+        &copy; 2026 Nayla Putri Az'zahro. Dibuat dengan HTML, CSS, dan JavaScript.
+      </p>
+      <a href="#home" class="back-to-top" aria-label="Kembali ke atas">
+        ↑
+      </a>
+    </div>
+  </footer>
+
+  <!-- Toast Notification -->
+  <div id="toastNotice" class="toast-notice"></div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
